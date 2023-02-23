@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GOSPEL BLOG</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9d829ab911.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-layout">
+      <div class="bg-img">
+        <nav class="nav">
+          <div class="logo"></div>
+          <div class="container">
+            <button
+              class="button-one"
+              aria-controls="primary-navigation"
+              aria-expanded="false"
+            >
+              <svg class="hamburger" viewbox="0 0 100 100" width="35">
+                <rect
+                  class="line top"
+                  x="5"
+                  y="15"
+                  width="90"
+                  height="10"
+                  rx="5"
+                ></rect>
+                <rect
+                  class="line middle"
+                  x="5"
+                  y="50"
+                  width="90"
+                  height="10"
+                  rx="5"
+                ></rect>
+                <rect
+                  class="line bottom"
+                  x="5"
+                  y="85"
+                  width="90"
+                  height="10"
+                  rx="5"
+                ></rect>
+              </svg>
+            </button>
+
+            <a href="#" class="logo">
+              <h1>THE GOSPEL BLOG</h1>
+              <img src="/logo.svg" alt=""
+            /></a>
+            <div class="nav-items invisible-nav">
+              <ul class="nav-primary">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <header>
+          <div class="container">
+            <div class="landing-page title">
+              <h1>Just a Sermon on the Blog</h1>
+              <p class="description">
+                A Christ centered blog, dedicated to declaring the Gospel of
+                Christ Jesus to all people everywhere. Feel free to explore the
+                questions we answered :)
+              </p>
+            </div>
+            <article class="Question q1">
+              <h3>IS JESUS GOD?</h3>
+              <p>What is actually meant by this?</p>
+              <p class="preview">Preview Answer</p>
+              <p class="display">
+                Is your objection to this something like "If Jesus is God, was
+                he praying to himself?"; The good news is that you haven't even
+                began to understand what this statement means.
+              </p>
+              <button><a href="/IJG.html">OPEN ANSWER</a></button>
+            </article>
+            <article class="Question q2">
+              <h3>WHAT MUST I DO TO BE SAVED?</h3>
+              <p>Saved from What?</p>
+              <p class="preview2">Preview Answer</p>
+              <p class="display2">What do you need to be saved from?</p>
+              <button>
+                <a
+                  href="https://www.thechristianworldview.org/about-us-2/what-must-do-to-be-saved/"
+                  >OPEN ANSWER</a
+                >
+              </button>
+            </article>
+            <article class="Question q3">
+              <h3>An APPOINTMENT YOU WILL KEEP</h3>
+              <p>There is an appointment coming which you will keep.</p>
+              <p class="preview3">Preview Answer</p>
+              <p class="display3">
+                Joel Beeke features in this blog with an article on the
+                appointment you will keep
+              </p>
+              <p class="display">
+                <a href="https://www.the-highway.com/appointment_Beeke.html"
+                  >See more...</a
+                >
+              </p>
+              <button><a href="">OPEN ANSWER</a></button>
+            </article>
+          </div>
+        </header>
+      </div>
+    </div>
+    <script>
+      const toggle = document.querySelector('.hamburger');
+      const nav = document.querySelector('.nav-items');
+      const line = document.querySelector('.top');
+      const middle = document.querySelector('.middle');
+      const bottom = document.querySelector('.bottom');
+      const display = document.querySelector('.display');
+      const display2 = document.querySelector('.display2');
+      const display3 = document.querySelector('.display3');
+      const preview = document.querySelector('.preview');
+      const preview2 = document.querySelector('.preview2');
+      const preview3 = document.querySelector('.preview3');
+
+      toggle.addEventListener('click', function () {
+        nav.classList.toggle('invisible-nav');
+        toggle.classList.toggle('transition');
+
+        line.classList.toggle('tope');
+        middle.classList.toggle('mid');
+        bottom.classList.toggle('bot');
+      });
+
+      preview.addEventListener('click', function () {
+        display.classList.toggle('display-now');
+      });
+      preview2.addEventListener('click', function () {
+        display2.classList.toggle('display-now');
+      });
+      preview3.addEventListener('click', function () {
+        display3.classList.toggle('display-now');
+      });
+    </script>
+  </body>
+</html>
